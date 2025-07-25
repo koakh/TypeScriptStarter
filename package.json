@@ -13,9 +13,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^13.1.7",
-    "env-cmd": "^10.0.1",
-    "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.7.4"
+    "@types/node": "^24.1.0",
+    "env-cmd": "^10.1.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
   }
 }
