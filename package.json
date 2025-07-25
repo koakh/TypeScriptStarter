@@ -5,17 +5,23 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc && node dist/app.js",
-    "dev": "env-cmd ts-node-dev --respawn -- src/app.ts",
-    "debug": "env-cmd ts-node-dev --respawn --debug --inspect=9226 -- src/app.ts",
-    "kill-port": "fuser -k 9226/tcp"
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "dev": "env-cmd -e development ts-node-dev --respawn -- src/app.ts",
+    "debug": "ts-node-dev --respawn --debug --inspect=9226 -- src/app.ts",
+    "kill-port": "fuser -k 9226/tcp",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^24.1.0",
-    "env-cmd": "^10.1.0",
+    "dotenv": "^17.2.1",
+    "husky": "^9.1.7",
+    "trim-newlines": "^5.0.0",
     "ts-node-dev": "^2.0.0",
+    "tslint": "^5.20.1",
     "typescript": "^5.8.3"
-  }
+  },
+  "dependencies": {}
 }
